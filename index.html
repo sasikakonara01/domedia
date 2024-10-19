@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DO Media</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="site-icon.jpg" type="image/jpg" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo">
+          <img src="site-logo.png" alt="DO Media Logo" />
+        </div>
+
+        <!-- Hamburger Toggle for Mobile Menu -->
+        <button id="toggle-menu" class="hamburger" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#tesomonial">Testimonials</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <!-- Mobile Navigation Menu -->
+        <ul class="mobile-nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>Don’t look anywhere,<br />This is the best place on web</h1>
+          <p>
+            Living in today’s metropolitan world of cellular phones, mobile
+            computers and other high-tech gadgets is not just hectic but very.
+          </p>
+          <a href="#" class="btn"
+            >Get Started <img src="arrow-right.png" alt="Arrow Icon"
+          /></a>
+        </div>
+        <div class="hero-image">
+          <img src="laptop.png" alt="Laptop" />
+        </div>
+      </div>
+    </section>
+
+    <!-- js handle menu toggle -->
+    <script>
+      const toggleButton = document.getElementById("toggle-menu");
+      const mobileNavLinks = document.querySelector(".mobile-nav-links");
+
+      toggleButton.addEventListener("click", () => {
+        mobileNavLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
